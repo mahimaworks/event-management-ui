@@ -50,8 +50,7 @@ function EventViews() {
 
           <table
             className="table table-striped table text-center"
-            style={{ width: "80%", height: "20%", margin: "0" }}
-          >
+            style={{ width: "80%", height: "20%", margin: "0" }} >
             <thead>
               <tr>
                 <th>S.No</th>
@@ -76,8 +75,7 @@ function EventViews() {
                         placeholderText="Select Date"
                         showTimeSelect
                         dateFormat="MMMM d, yyyy h:mmaa"
-                        onChange={(e) => setDate(e.target.value)}
-                      />
+                        onChange={(e) => setDate(e.target.value)} />
                     }
                   </td>
                   <td>{event.eventDateStatus}</td>
@@ -85,19 +83,14 @@ function EventViews() {
                     <select
                       className="form-select"
                       aria-label="food status"
-                      onChange={updateFoodStatus}
-                    >
-                      <option value="dinner" defaultValue="dinner">
-                        Dinner
-                      </option>
+                      onChange={updateFoodStatus}>
+                      <option value="dinner" defaultValue="dinner">Dinner</option>
                       <option value="lunch">Lunch</option>
                       <option value="breakfast">Breakfast</option>
                     </select>
                   </td>
                   <td>
-                    <button type="button" className="btn btn-primary">
-                      Book
-                    </button>
+                    <button type="button" className="btn btn-primary"> Book</button>
                   </td>
                 </tr>
               ))}
@@ -107,15 +100,10 @@ function EventViews() {
 
         <div className="container-fluid">
           <form className="was-validated">
-            {" "}
             <br />
-            <button type="button" className="btn btn-primary">
-              Edit
-            </button>{" "}
+            <button type="button" className="btn btn-primary"> Edit </button>
             &nbsp; &nbsp;
-            <button type="button" className="btn btn-primary">
-              Update
-            </button>
+            <button type="button" className="btn btn-primary"> Update</button>
           </form>
         </div>
       </div>
